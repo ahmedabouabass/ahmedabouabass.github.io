@@ -71,3 +71,23 @@ body.ar .rs-hero h1{max-width:none}
 .foot{position:relative;z-index:2}
 @media (max-width:760px){.rs-hero{grid-template-columns:1fr;min-height:0}.rs-hero-self{order:-1}.rs-ring{width:min(240px,64vw)}}
 [dir="rtl"] .back{display:inline-block}
+
+/* 7-day challenge */
+.rs-chal{list-style:none;margin:2rem 0 0;padding:0;max-width:46rem;display:flex;flex-direction:column}
+.rs-cday{display:flex;gap:1.1rem;padding:1.2rem 0;border-top:1px solid var(--line)}
+.rs-cnum{flex:none;width:2.2rem;height:2.2rem;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font:500 1rem var(--serif);color:var(--gold-2)}
+.rs-cbody{min-width:0}
+.rs-cbody h3{font:500 1.25rem/1.3 var(--serif);margin:0 0 .3rem}
+.rs-cmeta{font:400 .85rem var(--sans);color:var(--muted)}
+.rs-cwhy{color:var(--muted);margin:0 0 .5rem;font-size:.95rem}
+.rs-ctask{margin:0 0 .7rem}
+.rs-crow{display:flex;flex-wrap:wrap;gap:.8rem 1.2rem;align-items:center}
+.rs-cday.is-today .rs-cnum{background:var(--gold);color:#0E1522;border-color:var(--gold)}
+.rs-cday.is-done .rs-cnum{background:var(--gold-2);color:#0E1522;border-color:var(--gold-2)}
+.rs-cday.is-done h3{color:var(--muted)}
+.rs-cday.is-locked{opacity:.55}
+.rs-done{border:1px solid var(--gold);border-radius:14px;padding:1.2rem 1.4rem;margin:1.6rem 0;max-width:46rem}
+.rs-restart{margin:2rem 0 0}
+.rs-link{background:none;border:0;color:var(--muted);text-decoration:underline;cursor:pointer;font:inherit;padding:0}
+.rs-hero-chal h1{max-width:14ch}
+body.ar .rs-hero-chal h1{max-width:none}
